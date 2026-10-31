@@ -486,3 +486,27 @@
         transition: none;
     }
 }
+
+/* tampilan hp */
+
+/* Tampilan laptop */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
